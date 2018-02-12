@@ -12,7 +12,7 @@ import SpfxReactTemplate from './components/SpfxReactTemplate';
 import { ISpfxReactTemplateProps } from './components/ISpfxReactTemplateProps';
 
 export interface ISpfxReactTemplateWebPartProps {
-  description: string;
+  listName: string;
 }
 
 export default class SpfxReactTemplateWebPart extends BaseClientSideWebPart<ISpfxReactTemplateWebPartProps> {
@@ -21,7 +21,7 @@ export default class SpfxReactTemplateWebPart extends BaseClientSideWebPart<ISpf
     const element: React.ReactElement<ISpfxReactTemplateProps > = React.createElement(
       SpfxReactTemplate,
       {
-        description: this.properties.description
+        listName: this.properties.listName
       }
     );
 
@@ -43,8 +43,8 @@ export default class SpfxReactTemplateWebPart extends BaseClientSideWebPart<ISpf
             {
               groupName: strings.BasicGroupName,
               groupFields: [
-                PropertyPaneTextField('description', {
-                  label: strings.DescriptionFieldLabel
+                PropertyPaneTextField('listName', {
+                  label: strings.ListNameFieldLabel
                 })
               ]
             }

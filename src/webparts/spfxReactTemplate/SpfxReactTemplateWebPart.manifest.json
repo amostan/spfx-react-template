@@ -20,7 +20,7 @@
     "description": { "default": "A spfx web app template with redux and testing framework" },
     "officeFabricIconFontName": "Page",
     "properties": {
-      "description": "SpfxReactTemplate"
+      "listName": "Tasks"
     }
   }]
 }

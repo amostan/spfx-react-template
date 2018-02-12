@@ -1,3 +1,3 @@
 export interface ISpfxReactTemplateProps {
-  description: string;
+  listName: string;
 }
