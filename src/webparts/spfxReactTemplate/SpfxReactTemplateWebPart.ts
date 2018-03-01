@@ -8,12 +8,13 @@ import {
 } from '@microsoft/sp-webpart-base';
 
 import * as strings from 'SpfxReactTemplateWebPartStrings';
+import { ISpfxReactTemplateWebPartProps } from './SpfxReactTemplateWebPartProps';
 import SpfxReactTemplate from './components/SpfxReactTemplate';
 import { ISpfxReactTemplateProps } from './components/ISpfxReactTemplateProps';
 
-export interface ISpfxReactTemplateWebPartProps {
-  listName: string;
-}
+// export interface ISpfxReactTemplateWebPartProps {
+//   listName: string;
+// }
 
 export default class SpfxReactTemplateWebPart extends BaseClientSideWebPart<ISpfxReactTemplateWebPartProps> {
 
