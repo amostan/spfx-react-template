@@ -1,6 +1,5 @@
 import { ActionTypes, Action } from '../actions/Actions';
 import ITaskItem from '../models/ITaskItem';
-import IState from '../models/IState';
 
 export const task = (state: any, action: Action ) => {
   switch(action.type) {
@@ -17,7 +16,7 @@ export const task = (state: any, action: Action ) => {
           Id: action.payload.Id,
           Title: action.payload.Title,
           PercentComplete: action.payload.PercentComplete
-        }     
+        };     
     default:
       return state;
   }

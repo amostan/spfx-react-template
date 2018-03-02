@@ -1,5 +1,5 @@
 import ITaskItem from '../models/ITaskItem';
-import { ISpfxReactTemplateWebPartProps } from '../SpfxReactTemplateWebPartProps';
+import ISpfxReactTemplateWebPartProps from '../ISpfxReactTemplateWebPartProps';
 
 export enum ActionTypes {
   UPDATE_WEBPARTPROPS,
