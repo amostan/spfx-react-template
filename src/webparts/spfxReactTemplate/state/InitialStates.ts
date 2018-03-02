@@ -12,7 +12,7 @@ export const initialTaskState: ITaskItem = {
   PercentComplete: 0
 };
 
-export const InitialAppState: IAppState = {
+export const initialAppState: IAppState = {
   webPartProps: initialWebPartProps,
   tasks: [],
   sort: "SORTED_BY_TITLE",

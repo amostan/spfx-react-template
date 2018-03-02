@@ -5,11 +5,12 @@ import { assert, expect } from 'chai';
 import { ActionTypes, Action } from '../actions/Actions';
 import ITaskItem from '../models/ITaskItem';
 import { task } from '../reducers/TaskReducers';
+import { initialTaskState } from '../state/InitialStates';
 
 describe('Task Reducers', () => {
 
   it('Add Task', () => {
-    const state = {};
+    const state: ITaskItem = initialTaskState;
     const action: Action = {
       type: ActionTypes.ADD_TASK_SUCCESS,
       payload: {

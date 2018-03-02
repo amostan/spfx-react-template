@@ -1,7 +1,8 @@
 import { ActionTypes, Action } from '../actions/Actions';
 import ITaskItem from '../models/ITaskItem';
+import { initialTaskState } from '../state/InitialStates';
 
-export const task = (state: any, action: Action ) => {
+export const task = (state: ITaskItem = initialTaskState, action: Action ): ITaskItem => {
   switch(action.type) {
     case ActionTypes.ADD_TASK_SUCCESS:
       return {

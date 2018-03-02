@@ -12,10 +12,6 @@ import ISpfxReactTemplateWebPartProps from './ISpfxReactTemplateWebPartProps';
 import SpfxReactTemplate from './components/SpfxReactTemplate';
 import { ISpfxReactTemplateProps } from './components/ISpfxReactTemplateProps';
 
-// export interface ISpfxReactTemplateWebPartProps {
-//   listName: string;
-// }
-
 export default class SpfxReactTemplateWebPart extends BaseClientSideWebPart<ISpfxReactTemplateWebPartProps> {
 
   public render(): void {
