@@ -1,6 +1,6 @@
 ## spfx-react-template
 
-This is where you include your WebPart documentation.
+This is personal project to create a base template for developing SharePoint Framework web part using React-Redux framework. Unit tests are implemented as well.
 
 ### Building the code
 
